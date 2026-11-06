@@ -3,21 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Happy Hour | The Daily Grind Coffee Shop</title>
+  <title>Nimbus Cafe | The Daily Grind Coffee Shop</title>
   <!-- Bootstrap CSS: https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons: https://icons.getbootstrap.com/ -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link src="css/stylesheet.css">
 </head>
 <body>
-
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid bg-info-emphasis">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="blueberry" class="bi bi-cloud-haze-fill" viewBox="0 0 16 16">
+  <path d="M4 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m2 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M13.405 4.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973"/>
+</svg>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <!-- Hero
        Position utilities: https://getbootstrap.com/docs/5.3/utilities/position/
        Border radius utilities: https://getbootstrap.com/docs/5.3/utilities/borders/#radius -->
   <header class="position-relative overflow-hidden text-white rounded-bottom-4 mx-md-3">
     <!-- Object fit (background image): https://getbootstrap.com/docs/5.3/utilities/object-fit/ -->
-    <img src="https://picsum.photos/1600/700?random=1" alt="" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+    <img src="img/klickblick-clouds-4215608_1920.jpg" alt="" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
     <!-- Opacity (image overlay): https://getbootstrap.com/docs/5.3/utilities/opacity/ -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
 
@@ -27,10 +47,10 @@
       <div class="row my-md-5">
         <div class="col-md-9 col-lg-6">
           <!-- Badge: https://getbootstrap.com/docs/5.3/components/badge/ -->
-          <span class="badge text-bg-warning d-inline-flex align-items-center gap-1 mb-3">
+          <span class="badge text-bg-info d-inline-flex align-items-center gap-1 mb-3">
             <!-- Icon: https://icons.getbootstrap.com/icons/stars/ -->
             <i class="bi bi-stars" aria-hidden="true"></i>
-            Limited Time Offer
+            Grand Opening
           </span>
           <!-- Display heading: https://getbootstrap.com/docs/5.3/content/typography/#display-headings -->
           <h1 class="display-4 mb-3">Nimbus Cafe is Here!</h1>
@@ -39,7 +59,7 @@
           <!-- Buttons: https://getbootstrap.com/docs/5.3/components/buttons/
                Stacked-to-row layout: https://getbootstrap.com/docs/5.3/components/buttons/#block-buttons -->
           <div class="d-grid d-sm-flex gap-3 mb-4">
-            <a href="#" class="btn btn-warning btn-lg fs-6 px-3">Order Ahead</a>
+            <a href="#" class="btn btn-info btn-lg fs-6 px-3">Order Ahead</a>
             <a href="#" class="btn btn-outline-light btn-lg fs-6 px-3">View Menu</a>
           </div>
 
@@ -48,12 +68,12 @@
           <ul class="list-unstyled d-flex flex-column flex-sm-row gap-3 mb-0">
             <li class="d-flex align-items-center gap-2">
               <!-- Icon: https://icons.getbootstrap.com/icons/clock/ -->
-              <i class="bi bi-clock text-warning" aria-hidden="true"></i>
+              <i class="bi bi-clock text-info" aria-hidden="true"></i>
               7AM - 5PM Daily
             </li>
             <li class="d-flex align-items-center gap-2">
               <!-- Icon: https://icons.getbootstrap.com/icons/geo-alt/ -->
-              <i class="bi bi-geo-alt text-warning" aria-hidden="true"></i>
+              <i class="bi bi-geo-alt text-info" aria-hidden="true"></i>
               Downtown Location
             </li>
           </ul>
@@ -70,10 +90,10 @@
       <div class="row justify-content-center text-center mb-4 mb-md-5">
         <div class="col-md-8 col-lg-6">
           <!-- Badge: https://getbootstrap.com/docs/5.3/components/badge/ -->
-          <span class="badge text-bg-warning mb-3">Special Offer</span>
+          <span class="badge text-bg-info mb-3">Special Offer</span>
           <!-- Display heading: https://getbootstrap.com/docs/5.3/content/typography/#display-headings -->
           <h2 class="display-6 mb-3">The Perfect Pairing</h2>
-          <p class="text-body-secondary mb-0">Indulge in our signature coffee selections and house-made scones, crafted fresh daily with the finest ingredients.</p>
+          <p class="text-body-secondary mb-0">Indulge in our signature coffee selections and house-made pastries, baked fresh daily with the finest ingredients.</p>
         </div>
       </div>
 
@@ -84,18 +104,18 @@
                Shadows: https://getbootstrap.com/docs/5.3/utilities/shadows/ -->
           <article class="card h-100 shadow">
             <!-- Responsive image: https://getbootstrap.com/docs/5.3/content/images/#responsive-images -->
-            <img src="https://picsum.photos/640/560?random=2" width="640" height="560" alt="Artisan coffee" class="card-img-top img-fluid">
+            <img src="img/13758299-coffee-4618705.jpg" width="640" height="560" alt="Artisan coffee" class="card-img-top img-fluid">
             <div class="card-body p-4">
               <h3 class="card-title h6 d-flex align-items-center gap-2 mb-3">
                 <!-- Icon: https://icons.getbootstrap.com/icons/cup-hot/ -->
-                <i class="bi bi-cup-hot text-warning" aria-hidden="true"></i>
+                <i class="bi bi-cup-hot text-info" aria-hidden="true"></i>
                 Artisan Coffee
               </h3>
-              <p class="card-text text-body-secondary small">Choose from our selection of expertly crafted espresso drinks, pour-overs, and specialty lattes.</p>
+              <p class="card-text text-body-secondary small">Choose from our selection of expertly crafted drinks, pour-overs, and specialty lattes.</p>
               <!-- Inline text elements (s, small): https://getbootstrap.com/docs/5.3/content/typography/#inline-text-elements -->
               <p class="mb-0">
-                <s class="small text-body-secondary">$5.50</s>
-                <span class="fs-5 ms-1">$3.99</span>
+                <s class="small text-body-secondary">$7.50</s>
+                <span class="fs-5 ms-1">$4.99</span>
               </p>
             </div>
           </article>
@@ -106,18 +126,18 @@
                Shadows: https://getbootstrap.com/docs/5.3/utilities/shadows/ -->
           <article class="card h-100 shadow">
             <!-- Responsive image: https://getbootstrap.com/docs/5.3/content/images/#responsive-images -->
-            <img src="https://picsum.photos/640/560?random=3" width="640" height="560" alt="House-made scones" class="card-img-top img-fluid">
+            <img src="img/ritae-eclair-3366430_1920.jpg" width="640" height="560" alt="House-made scones" class="card-img-top img-fluid">
             <div class="card-body p-4">
               <h3 class="card-title h6 d-flex align-items-center gap-2 mb-3">
                 <!-- Icon: https://icons.getbootstrap.com/icons/stars/ -->
-                <i class="bi bi-stars text-warning" aria-hidden="true"></i>
-                House-Made Scones
+                <i class="bi bi-stars text-info" aria-hidden="true"></i>
+                House-Made Pastries
               </h3>
               <p class="card-text text-body-secondary small">Freshly baked daily with rotating flavors including blueberry, cranberry orange, and classic vanilla.</p>
               <!-- Inline text elements (s, small): https://getbootstrap.com/docs/5.3/content/typography/#inline-text-elements -->
               <p class="mb-0">
-                <s class="small text-body-secondary">$4.00</s>
-                <span class="fs-5 ms-1">$2.50</span>
+                <s class="small text-body-secondary">$6.00</s>
+                <span class="fs-5 ms-1">$3.50</span>
               </p>
             </div>
           </article>
@@ -129,9 +149,9 @@
       <div class="row justify-content-center mt-5">
         <div class="col-md-10 col-lg-7">
           <!-- Color and background helper (text-bg-warning): https://getbootstrap.com/docs/5.3/helpers/color-background/ -->
-          <div class="text-bg-warning rounded-4 text-center p-4">
+          <div class="text-bg-info rounded-4 text-center p-4">
             <h2 class="h2 fw-normal mb-3">Combo Deal</h2>
-            <p class="small mb-3">Get both a coffee and a scone for just $5.99 during happy hour</p>
+            <p class="small mb-3">Get both a coffee and a pastry for just $5.99 during happy hour</p>
             <!-- Inline text elements (s, small): https://getbootstrap.com/docs/5.3/content/typography/#inline-text-elements -->
             <p class="mb-0">
               <s class="small">$9.50</s>
@@ -148,13 +168,13 @@
       <!-- Background utilities: https://getbootstrap.com/docs/5.3/utilities/background/ -->
       <div class="bg-body-tertiary rounded-4 text-center px-4 py-4 py-md-5">
         <!-- Display heading: https://getbootstrap.com/docs/5.3/content/typography/#display-headings -->
-        <h2 class="display-6 mb-4 mb-md-5">Why Happy Hour at Our Shop?</h2>
+        <h2 class="display-6 mb-4 mb-md-5">Why Come to Our Shop?</h2>
         <!-- Grid: https://getbootstrap.com/docs/5.3/layout/grid/ -->
         <div class="row g-4 justify-content-center">
           <div class="col-md-4 col-lg-3">
             <!-- Icon: https://icons.getbootstrap.com/icons/cup-hot/
                  Icon circle (rounded-circle): https://getbootstrap.com/docs/5.3/utilities/borders/#radius -->
-            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-warning-subtle p-3 mb-3">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle p-3 mb-3">
               <i class="bi bi-cup-hot fs-5 lh-1 d-flex" aria-hidden="true"></i>
             </div>
             <h3 class="h6">Premium Quality</h3>
@@ -163,16 +183,16 @@
           <div class="col-md-4 col-lg-3">
             <!-- Icon: https://icons.getbootstrap.com/icons/stars/
                  Icon circle (rounded-circle): https://getbootstrap.com/docs/5.3/utilities/borders/#radius -->
-            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-warning-subtle p-3 mb-3">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle p-3 mb-3">
               <i class="bi bi-stars fs-5 lh-1 d-flex" aria-hidden="true"></i>
             </div>
             <h3 class="h6">Fresh Daily</h3>
-            <p class="text-body-secondary small mb-0">Scones baked fresh every morning with organic ingredients</p>
+            <p class="text-body-secondary small mb-0">Pastries baked fresh every morning with organic ingredients</p>
           </div>
           <div class="col-md-4 col-lg-3">
             <!-- Icon: https://icons.getbootstrap.com/icons/clock/
                  Icon circle (rounded-circle): https://getbootstrap.com/docs/5.3/utilities/borders/#radius -->
-            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-warning-subtle p-3 mb-3">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle p-3 mb-3">
               <i class="bi bi-clock fs-5 lh-1 d-flex" aria-hidden="true"></i>
             </div>
             <h3 class="h6">Perfect Timing</h3>
@@ -190,9 +210,9 @@
         <div class="col-md-8 col-lg-6">
           <!-- Display heading: https://getbootstrap.com/docs/5.3/content/typography/#display-headings -->
           <h2 class="display-6 mb-3">Don't Miss Out</h2>
-          <p class="text-body-secondary mb-4">Join us between 2PM and 5PM daily for the best coffee and scone deal in town. Your perfect afternoon awaits.</p>
+          <p class="text-body-secondary mb-4">Join us between 7AM and 5PM daily for the best coffee and Pastries deal in town. Your perfect afternoon awaits.</p>
           <!-- Button: https://getbootstrap.com/docs/5.3/components/buttons/ -->
-          <a href="#" class="btn btn-warning px-3">Visit Us Today</a>
+          <a href="#" class="btn btn-info px-3">Visit Us Today</a>
         </div>
       </div>
     </section>
@@ -200,13 +220,19 @@
 
   <!-- Footer
        Responsive container: https://getbootstrap.com/docs/5.3/layout/containers/#responsive-containers -->
-  <footer class="container-md px-0 px-md-3">
+  <footer class="container-xlg px-0 px-md-3">
     <!-- Color and background helper (text-bg-dark): https://getbootstrap.com/docs/5.3/helpers/color-background/ -->
     <div class="text-bg-dark rounded-top-4 text-center px-3 py-3">
-      <p class="mb-1">The Daily Grind Coffee Shop</p>
-      <p class="small text-warning mb-0">123 Main Street, Downtown | Open 7AM - 8PM Daily</p>
+      <p class="mb-1">Made with Love, Served with Comfort</p>
+      <p class="small text-info mb-0">123 Main Street, Downtown | Open 7AM - 5PM Daily</p>
     </div>
   </footer>
 
+<style>
+body{
+  background: #bcdefb;
+}
+</style>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
